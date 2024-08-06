@@ -1,0 +1,42 @@
+h1 {
+  color: rgb(231, 107, 107);
+}
+p {
+  color: rgb(255, 146, 147);
+  /*font-weight: bold; */
+}
+h3 {
+  color: rgb(253, 163, 195);
+}
+
+p,
+h1.class1 {
+  color: pink;
+}
+
+p strong {
+  color: black;
+}
+
+#myparagraph {
+  color: blueviolet;
+}
+
+article {
+  text-align: center;
+  border: 1px dashed rgb(255, 0, 0);
+  padding: 5px;
+  background-color: rgb(201, 201, 255);
+  border-color: aq;
+}
+
+h1 {
+  padding: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Grey Qo", cursive;
+  font-weight: 1000;
+  font-style: normal;
+}
