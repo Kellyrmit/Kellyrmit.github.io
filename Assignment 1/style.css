@@ -1,12 +1,12 @@
 body {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #0f0a36;
+  flex-direction: column; /* To make the boxes of text stack vertically */
+  align-items: center; /* centers the boxes vertically*/
+  background-color: #0f0a39;
 }
 
 .box {
+  /* i made a box class for the content in the html page , so i can style all of them at once here*/
   width: 600px;
   padding: 20px;
   margin: 20px;
@@ -14,20 +14,22 @@ body {
   border: 10px solid #8f84ce;
   background-color: #e1dbff;
 }
+/* For aesthetic purposes i made the text aligned to the left and spaced evenly inside the box using padding*/
 
 h1 {
-  margin-bottom: 10px;
+  margin-bottom: -5px; /* To reduce the space between the headings*/
 }
-h3 {
-  margin-top: 5px;
-}
+
 hr {
+  /*it didn't show up in the preview so i changed the colour and width and somehow it worked*/
   width: 800px;
   border-color: #c2b7ff;
 }
+
 a {
   color: #c2b7ff;
 }
+
 a:hover {
   color: rgb(255, 255, 255);
   /* To make it stand out, i changed the colour to white 
