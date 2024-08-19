@@ -1,0 +1,35 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0f0a36;
+}
+
+.box {
+  width: 600px;
+  padding: 20px;
+  margin: 20px;
+  text-align: left;
+  border: 10px solid #8f84ce;
+  background-color: #e1dbff;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+h3 {
+  margin-top: 5px;
+}
+hr {
+  width: 800px;
+  border-color: #c2b7ff;
+}
+a {
+  color: #c2b7ff;
+}
+a:hover {
+  color: rgb(255, 255, 255);
+  /* To make it stand out, i changed the colour to white 
+    when hovering over the link */
+}
