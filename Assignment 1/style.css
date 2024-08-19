@@ -6,7 +6,7 @@ body {
 }
 
 .box {
-  /* i made a box class for the content in the html page , so i can style all of them at once here*/
+  /* i made a box class for the content in the html page , so i can style all of them at once here with the size, aligned text, colour etc*/
   width: 600px;
   padding: 20px;
   margin: 20px;
