@@ -18,4 +18,5 @@ function updateProgressBar() {
   const value = (video.currentTime / video.duration) * 100;
   progressBar.style.width = value + "%";
 }
-// Add other functionalities here
+/* added functionalities */
+/* 1. double click fullscreen */
