@@ -1,19 +1,15 @@
+/*As my audio is a jazzy cafe vibe, i customised the website to match that.
+So i used browns and oranges to give a sunset cafe look, with pink to highlight important elements in the website, 
+such as the image, buttons, progress bar and website title.*/
 :root {
+  /*Because i use these colours multiple times, this code is to make it convenient to go back to and use below. */
   --primary-bg-color: #411d11;
   --text-color: #fd8755;
   --main-bg-color: #2e0909;
   --main-text-color: #ffa4a4;
   --main-btn-bg-color: #fc8b40;
 }
-
-body,
-h1,
-p,
-ul {
-  margin: 0;
-  padding: 0;
-}
-
+/* For spacing, positioning and fonts*/
 body {
   font-family: "Arial", sans-serif;
   background-color: var(--primary-bg-color);
@@ -25,16 +21,7 @@ body {
   justify-content: space-between;
 }
 
-/* Add additional styles as needed */
-
-/* Create a container for the main content */
-.container {
-  max-width: 1000px;
-  width: 100%;
-  padding: 10px;
-}
-
-/* Header styling */
+/* Header styling and colouring*/
 header {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
@@ -43,7 +30,7 @@ header {
   width: 100%;
 }
 
-/* Navigation styling */
+/* Navigation styling and positioning */
 nav {
   margin-top: 20px;
   text-align: center;
@@ -63,28 +50,20 @@ nav a {
   text-decoration: none;
   color: var(--text-color);
 }
-
+/*The image was originally too big, so i styled it smaller in the center and gave it a border. */
 #audio-cover {
   width: 60%;
   height: auto;
   margin: 20px auto;
-  border: 5px solid #ffa4a4;
+  border: 5px solid #ffbfa1;
 }
 
+/* To align and colour the description text*/
 .description {
   text-align: center;
   color: #ffa4a4;
 }
-/* Media player styling */
-.media-player {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.media-player video {
-  max-width: 100%;
-}
-
+/*Spacing out the buttons evenly in the center by using gap, margin top, justify content, etc.*/
 .custom-controls {
   display: flex;
   justify-content: center;
@@ -92,31 +71,30 @@ nav a {
   margin-top: 20px;
   width: 100%;
 }
-
+/* Customising all the buttons themselves with colour and borders, etc. */
 .custom-controls button {
   background-color: var(--main-btn-bg-color);
   border-radius: 50%; /* To make the icon round for aesthetic purpposes */
-  border: none;
+  border: 3px solid #ffbdbd;
   padding: 8px 9px;
   cursor: pointer;
 }
 
 .progress-bar {
-  width: 70%;
+  width: 75%;
   height: 7px;
   border-radius: 10px; /* To give the bar rounded edges */
-  background-color: #000000;
+  background-color: #fba9a9;
   margin: 10px auto;
   margin-top: 20px;
-  overflow: hidden;
+  overflow: hidden; /*To make sure the progress indicator doesn't extend outside of the progress bar*/
 }
 
 .progress-bar span {
   display: block;
   height: 100%;
-  background-color: #f9a260;
+  background-color: #ffffff; /*Coloured the progress in the bar brighter so user can see how far into the song they are.*/
   width: 0;
-  transition: width 0.3s ease;
 }
 
 /* Footer styling */

@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignment 2 website</title>
-    <!-- add the font family of your choice -->
+    <title>Assignment 2</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
@@ -16,25 +15,27 @@
     </header>
 
     <!-- Navigation Section -->
+    <!--For the navigation section, I put some page elements that correlate to what a music player website would have, like playlists.-->
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Music</a></li>
         <li><a href="#">Playlists</a></li>
         <li><a href="#">Contact</a></li>
-        <!-- Add or remove navigation items as needed -->
       </ul>
     </nav>
 
     <!-- Main Content Section -->
     <main class="container">
       <!-- Media Player Section -->
+      <!-- Because my website is a study lofi website, i added an image that matches the vibe of the audio i picked.-->
       <div class="media-player">
         <img
           id="audio-cover"
           src="4539068-anime-cafes-japan.png"
           alt="SLow Jazz Cafe"
         />
+        <!--This is where i referenced the audio source after i inserted downloaded file in the Assignment 2 folder.-->
         <audio id="custom-audio-player" controls>
           <source src="Slow Jazz Cafe.mp3" type="audio/mp3" />
         </audio>
@@ -43,7 +44,8 @@
           Now Playing: ~Chill Out Jazz Piano~ by BGM Channel
         </div>
 
-        <!--Adding button controls-->
+        <!--Adding multiple button controls-->
+        <!--I mainly chose these five button controls as it's a audio player, and i want users to be able to control the volume, and loop the song while studying.-->
         <div class="custom-controls">
           <button id="loop-btn">
             <img
@@ -91,18 +93,25 @@
             />
           </button>
         </div>
+        <!--I separated the progress bar div because i wanted the progress bar to be underneath for aesthetic purposes.-->
         <div class="progress-bar">
           <span id="progress-bar-fill"></span>
         </div>
       </div>
     </main>
+    <br />
 
     <!-- Footer Section -->
+    <!--I put my references here with links from where i got the audio and image-->
     <footer>
-      <a href="https://icons8.com/icon/59862/play">Play</a> icon by
-      <a href="https://icons8.com">Icons8</a>
-      <a href="https://icons8.com/icon/61012/pause">Pause</a> icon by
-      <a href="https://icons8.com">Icons8</a>
+      Music from
+      <a href="https://www.youtube.com/watch?v=RelTcUFL8Yk">BGM Channel</a>
+      <br />
+      Image from
+      <a
+        href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F759208449666218743%2F&psig=AOvVaw03-n3bAxDtENSBj3CG1IuW&ust=1727760178942000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCPDy6K_26YgDFQAAAAAdAAAAABAE"
+        >Pinterest</a
+      >
     </footer>
   </body>
 </html>
