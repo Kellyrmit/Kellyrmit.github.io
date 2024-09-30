@@ -30,13 +30,40 @@
     <main class="container">
       <!-- Media Player Section -->
       <div class="media-player">
-        <img id="audio-cover" src="4539068-anime-cafes-japan.png" />
+        <img
+          id="audio-cover"
+          src="4539068-anime-cafes-japan.png"
+          alt="SLow Jazz Cafe"
+        />
         <audio id="custom-audio-player" controls>
           <source src="Slow Jazz Cafe.mp3" type="audio/mp3" />
         </audio>
 
+        <div class="description">
+          Now Playing: ~Chill Out Jazz Piano~ by BGM Channel
+        </div>
+
+        <!--Adding button controls-->
         <div class="custom-controls">
-          <button id="play-pause-btn" onclick="togglePlayPause()">
+          <button id="loop-btn">
+            <img
+              id="loop-img"
+              src="https://img.icons8.com/ios-glyphs/30/repeat.png"
+              alt="Loop Button"
+              width="24"
+              height="24"
+            />
+          </button>
+          <button id="decrease-volume-btn">
+            <img
+              id="decrease-volume-img"
+              src="https://img.icons8.com/ios-glyphs/30/low-volume.png"
+              alt="Decrease volume Button"
+              width="24"
+              height="24"
+            />
+          </button>
+          <button id="play-pause-btn">
             <img
               id="play-pause-img"
               src="https://img.icons8.com/ios-glyphs/30/play--v1.png"
@@ -45,19 +72,29 @@
               height="24"
             />
           </button>
-          <!-- add the missing buttons or functionality here -->
-          <div class="progress-bar">
-            <span id="progress-bar-fill"></span>
-          </div>
+          <button id="increase-volume-btn">
+            <img
+              id="increase-volume-img"
+              src="https://img.icons8.com/ios-glyphs/30/high-volume--v1.png"
+              alt="Increase volume Button"
+              width="24"
+              height="24"
+            />
+          </button>
+          <button id="mute-unmute-btn">
+            <img
+              id="mute-unmute-img"
+              src="https://img.icons8.com/ios-glyphs/30/no-audio--v1.png"
+              alt="Mute Button"
+              width="24"
+              height="24"
+            />
+          </button>
+        </div>
+        <div class="progress-bar">
+          <span id="progress-bar-fill"></span>
         </div>
       </div>
-
-      <!-- Additional Content Section -->
-      <section>
-        <h2>Additional Content</h2>
-        <p>This is where you can showcase any other relevant content.</p>
-        <!-- Add more content as needed -->
-      </section>
     </main>
 
     <!-- Footer Section -->

@@ -2,7 +2,7 @@
   --primary-bg-color: #411d11;
   --text-color: #fd8755;
   --main-bg-color: #2e0909;
-  --main-text-color: #ffffff;
+  --main-text-color: #ffa4a4;
   --main-btn-bg-color: #fc8b40;
 }
 
@@ -64,6 +64,17 @@ nav a {
   color: var(--text-color);
 }
 
+#audio-cover {
+  width: 60%;
+  height: auto;
+  margin: 20px auto;
+  border: 5px solid #ffa4a4;
+}
+
+.description {
+  text-align: center;
+  color: #ffa4a4;
+}
 /* Media player styling */
 .media-player {
   width: 100%;
@@ -76,36 +87,34 @@ nav a {
 
 .custom-controls {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
   gap: 1rem;
-  margin-top: 10px;
+  margin-top: 20px;
   width: 100%;
 }
 
 .custom-controls button {
   background-color: var(--main-btn-bg-color);
-  color: var(--main-text-color);
+  border-radius: 50%; /* To make the icon round for aesthetic purpposes */
   border: none;
-  padding: 8px 12px;
+  padding: 8px 9px;
   cursor: pointer;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
 }
 
 .progress-bar {
-  width: 100%;
-  height: 10px;
-  background-color: #ddd;
-  margin-top: 10px;
+  width: 70%;
+  height: 7px;
+  border-radius: 10px; /* To give the bar rounded edges */
+  background-color: #000000;
+  margin: 10px auto;
+  margin-top: 20px;
   overflow: hidden;
 }
 
 .progress-bar span {
   display: block;
   height: 100%;
-  background-color: var(--main-bg-color);
+  background-color: #f9a260;
   width: 0;
   transition: width 0.3s ease;
 }
