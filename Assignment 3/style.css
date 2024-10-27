@@ -70,6 +70,7 @@ h3 {
   width: 120px;
   height: 120px;
   background-color: #ffdbe7;
+  overflow: hidden;
   transition: border 0.3s; /* This creates a smooth transition for the border on hover */
 }
 
@@ -113,4 +114,9 @@ h3 {
     0.5
   ); /* My original sketch of the background was solid pink, but now i changed it to white (because it matches the outfit colours better) and at half opacity to not make it blinding. */
   border: 3px solid #412c75; /* I added a border again to be consistent with my design, as i also made a border for the outfit selector section. */
+}
+
+.avatar-frame img {
+  width: 100%; /* Fill the width of the avatar frame */
+  height: auto; /* Maintain aspect ratio */
 }

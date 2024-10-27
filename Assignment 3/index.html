@@ -14,6 +14,7 @@
     />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <h1>&#127872; Aishi's Dress-Up Game &#127872;</h1>
@@ -23,20 +24,35 @@
       <section class="outfit-selector">
         <h3>Select an outfit for Aishi:</h3>
         <div class="outfit-grid">
-          <div class="outfit-box"></div>
-          <div class="outfit-box"></div>
-          <div class="outfit-box"></div>
-          <div class="outfit-box"></div>
-          <div class="outfit-box"></div>
-          <div class="outfit-box"></div>
+          <div class="outfit-box" onclick="changeAvatar('aishi(black).png')">
+            <img src="aishi(crop-black).png" alt="Black School Uniform" />
+          </div>
+          <div class="outfit-box" onclick="changeAvatar('aishi(purp).png')">
+            <img src="aishi(crop-purp).png" alt="Purple School Uniform" />
+          </div>
+          <div class="outfit-box" onclick="changeAvatar('aishi(pink).png')">
+            <img src="aishi(crop-pink).png" alt="Pink School Uniform" />
+          </div>
+          <div class="outfit-box" onclick="changeAvatar('aishi(blue).png')">
+            <img src="aishi(crop-blue).png" alt="Blue School Uniform" />
+          </div>
+          <div class="outfit-box" onclick="changeAvatar('aishi(green).png')">
+            <img src="aishi(crop-green).png" alt="Green School Uniform" />
+          </div>
+          <div class="outfit-box" onclick="changeAvatar('aishi(red).png')">
+            <img src="aishi(crop-red).png" alt="Red School Uniform" />
+          </div>
         </div>
         <button class="confirm-btn">Confirm ✓</button>
       </section>
 
       <!-- Avatar Display Section -->
+      <!-- Image of avatar will be displayed here on selection -->
       <section class="avatar-display">
-        <!-- Image of avatar will be displayed here on selection -->
-        <div class="avatar-frame"></div>
+        <div class="avatar-frame">
+          <h2>Aishi:</h2>
+          <img id="avatar" />
+        </div>
       </section>
     </div>
   </body>
