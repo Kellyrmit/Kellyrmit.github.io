@@ -1,7 +1,116 @@
+/* Purple pastel grid background */
 body {
   background-color: #d6b7ff; /* Pastel purple background color */
   background-image: linear-gradient(0deg, white 2px, transparent 1px),
     linear-gradient(90deg, white 1px, transparent 2px);
   background-size: 40px 40px;
-  min-height: 100vh;
+  height: 140vh;
+}
+
+h1 {
+  font-family: "Press Start 2P";
+  text-align: center;
+  font-size: 30px;
+  color: #412c75;
+  margin-top: 45px;
+}
+
+h2 {
+  font-family: "Share Tech Mono";
+  font-size: large;
+  font-weight: bold;
+  color: #412c75;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Container to hold both sections */
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 55px;
+  padding-top: 44px;
+}
+
+/* Outfit Selection Section */
+.outfit-selector {
+  background-color: #9b87da;
+  padding: 30px;
+  text-align: center;
+  color: #4a4a4a;
+  width: 400px;
+  height: 600px;
+  border: 3px solid #412c75;
+  margin-right: 8px;
+}
+
+h3 {
+  font-family: "Share Tech Mono";
+  font-size: large;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Box Grid for the outfits */
+.outfit-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    2,
+    120px
+  ); /* This creates a 3 row by 2 column grid */
+  gap: 40px;
+  margin-bottom: 40px; /* Adjust height of confirm btn */
+  justify-content: center;
+}
+
+/* Outfit box options */
+.outfit-box {
+  width: 120px;
+  height: 120px;
+  background-color: #ffdbe7;
+  transition: border 0.3s; /* This creates a smooth transition for the border on hover */
+}
+
+.outfit-box:hover {
+  border: 3px solid #412c75; /* Outline on hover */
+}
+
+/* Confirm Button */
+.confirm-btn {
+  background-color: #412c75;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px; /* To make the button's corners slightly rounded */
+  cursor: pointer;
+  transition: border 0.3s;
+}
+
+.confirm-btn:hover {
+  border: 3px solid white;
+}
+
+/* Avatar Display container*/
+.avatar-display {
+  width: 400px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Displayed avatar frame background*/
+.avatar-frame {
+  width: 400px;
+  height: 600px;
+  margin-left: 16px; /* I couldn't get the avatar frame background to align perfectly along the white grid lines, so i used margin left to push it to the right a bit more.*/
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* My original sketch of the background was solid pink, but now i changed it to white (because it matches the outfit colours better) and at half opacity to not make it blinding. */
+  border: 3px solid #412c75; /* I added a border again to be consistent with my design, as i also made a border for the outfit selector section. */
 }
