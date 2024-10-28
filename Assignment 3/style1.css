@@ -127,7 +127,7 @@ h4 {
 
 /* Styling the avatar img itself*/
 .avatar-frame img {
-  margin-left: 60px; /* Again i used margin-left to center the img of the displayed avatar because it's easier to use when i can't make it centered with other ways.*/
-  max-width: 63%;
+  margin-left: 65px; /* Again i used margin-left to center the img of the displayed avatar because it's easier to use when i can't make it centered with other ways.*/
+  max-width: 60%;
   max-height: auto; /* Maintain aspect ratio */
 }

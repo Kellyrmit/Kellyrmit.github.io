@@ -20,7 +20,7 @@ body {
   outline-offset: -15px;
   display: flex;
   flex-direction: column; /* This helped me make each line of text vertically align on top of each other rather than horizontal without spacing.*/
-  padding: 10ch;
+  padding: 14ch;
 }
 
 /* For better contrast and clarity, i made the text bigger and bolder with the colour white as this is the only content on this page, so it's important that its visually clear.*/
