@@ -60,7 +60,7 @@ h4 {
   width: 400px;
   height: 600px;
   border: 3px solid #412c75; /* I chose to make a border around the outfit selector box using the same dark purple colour to make it stand out in contrast from the light purple background. I also did the same to the avatar display box on the right to maintain consistency. */
-  margin-right: 8px; /* i made little adjustments to fix the positioning, it was a bit challenging to figure out how to line things up perfectly along the background white grid. */
+  margin-left: 17px; /* i made little adjustments to fix the positioning, it was a bit challenging to figure out how to line things up perfectly along the background white grid. */
 }
 
 /* Box Grid for the outfits */
@@ -115,7 +115,7 @@ h4 {
 .avatar-frame {
   width: 400px;
   height: 600px;
-  margin-left: 16px; /* I couldn't get the avatar frame background to align perfectly along the white grid lines, so i used margin left to push it to the right a bit more.*/
+  margin-left: 28px; /* I couldn't get the avatar frame background to align perfectly along the white grid lines, so i used margin left to push it to the right a bit more.*/
   background-color: rgba(
     255,
     255,
@@ -127,7 +127,7 @@ h4 {
 
 /* Styling the avatar img itself*/
 .avatar-frame img {
-  margin-left: 65px; /* Again i used margin-left to center the img of the displayed avatar because it's easier to use when i can't make it centered with other ways.*/
+  margin-left: 80px; /* Again i used margin-left to center the img of the displayed avatar because it's easier to use when i can't make it centered with other ways.*/
   max-width: 60%;
   max-height: auto; /* Maintain aspect ratio */
 }
