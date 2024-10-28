@@ -1,55 +1,59 @@
 /* Same purple pastel grid background used in the main page for consistency */
 body {
-  background-color: #d6b7ff; /* Pastel purple background color */
+  background-color: #d6b7ff;
   background-image: linear-gradient(0deg, white 2px, transparent 1px),
     linear-gradient(90deg, white 1px, transparent 2px);
   background-size: 40px 40px;
   height: auto;
-  display: flex; /* Use flexbox for centering */
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
-  height: 100vh; /* Full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* limited viewport height, no need for scrolling as there's not much content on the ending screen. */
 }
 
 .center-box {
-  width: 640px; /* Width of the box */
-  height: 360px; /* Height of the box */
-  background-color: #412c75; /* Same dark purple background color */
-  outline: 2px solid white; /* Create an inner border effect */
-  outline-offset: -15px; /* Move the outline inwards */
-  display: flex; /* Use flexbox for centering box */
-  flex-direction: column; /* Center text vertically */
-  padding: 14ch; /* Adds even spacing all around and centers text*/
+  width: 640px;
+  height: 360px;
+  background-color: #412c75;
+  outline: 2px solid white; /* It was challenging for me as i didn't know how to make a white border inside of the box,
+  but after trial & error, and some research using w3schools, i found out i could use outline and make it offset negatively to achieve the look i was going for, instead of making 2 boxes and downsizing the inner one.*/
+  outline-offset: -15px;
+  display: flex;
+  flex-direction: column; /* This helped me make each line of text vertically align on top of each other rather than horizontal without spacing.*/
+  padding: 10ch;
 }
 
+/* For better contrast and clarity, i made the text bigger and bolder with the colour white as this is the only content on this page, so it's important that its visually clear.*/
 .center-box p {
   font-family: "Share Tech Mono";
-  color: white; /* Text color */
-  font-size: 30px; /* Text size */
-  text-align: center; /* Center text */
+  color: white;
+  font-size: 30px;
+  text-align: center;
   margin: 0;
 }
 
-/* Button styling */
+/* Here i styled the button, but this time i underlined the text and put a white border to guide the user if they want to play again. */
 .center-box button {
   font-family: "Share Tech Mono";
-  font-size: 20px; /* Text size */
-  text-align: center; /* Center text */
+  font-size: 20px;
+  text-align: center;
   text-decoration-line: underline;
-  color: #ffffff; /* Button text color */
-  background-color: #412c75; /* Button background color */
-  border: white 2px solid; /* No border */
-  padding: 10px 0; /* Padding inside the button */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
+  color: #ffffff;
+  background-color: #412c75;
+  border: white 2px solid;
+  padding: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
   transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
   width: 200px;
-  margin: 40px 0 0 10ch; /* Margin: top, right, bottom, left */
+  margin: 40px 0 0 10ch; /* Margin: top, right, bottom & left. There was a lot of styling code in this paragraph so, i combined the two margin code into one. */
 }
 
 /* Button hover effect */
 .center-box button:hover {
-  background-color: #ffffff; /* Change background on hover */
+  background-color: #ffffff; /* I inverted the colour of the border and background on hover for a bigger contrast against the dark purple background. */
   color: #412c75;
-  transform: scale(1.1);
+  transform: scale(
+    1.1
+  ); /* I'm trying to be consistent with the button effects like the main page. */
 }

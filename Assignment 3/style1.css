@@ -1,34 +1,36 @@
 /* Purple pastel grid background */
+/* I chose this purple background colour for a soft, cute aesthetic. I added grid lines paired with the retro heading font, for a playful game look. */
 body {
-  background-color: #d6b7ff; /* Pastel purple background color */
+  background-color: #d6b7ff;
   background-image: linear-gradient(0deg, white 2px, transparent 1px),
     linear-gradient(90deg, white 1px, transparent 2px);
-  background-size: 40px 40px;
-  height: 140vh;
+  background-size: 40px 40px; /* Size of the grid pattern */
+  height: 140vh; /* Ensures enough vertical scrolling space for content */
 }
 
 h1 {
   font-family: "Press Start 2P";
+  font-weight: bold; /* I wanted the title to stand out, so i added more emphasis by making it bolder. */
   text-align: center;
   font-size: 30px;
-  color: #412c75;
-  margin-top: 45px;
+  color: #412c75; /* I will be using this dark purple colour as the main colour palette */
+  margin-top: 45px; /* Added space above the title for balanced aesthetics */
 }
 
 h2 {
-  font-family: "Share Tech Mono";
+  font-family: "Share Tech Mono"; /*I chose this modern, tech-inspired font as a secondary text font for a cleaner look */
   font-size: large;
   font-weight: bold;
   color: #412c75;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 10px; /* Evenly spaced text makes good visual hierarachy and visibility */
 }
 
 h3 {
-  font-family: "Share Tech Mono";
+  font-family: "Share Tech Mono"; /* Staying consistent with the font for all smaller texts. */
   font-size: large;
   font-weight: bold;
-  color: #ffffff;
+  color: #ffffff; /* I made this text white to make it stand out, as it's important for users to see the instructions if they're lost. */
   text-align: center;
   margin-bottom: 40px;
 }
@@ -40,7 +42,7 @@ h4 {
   text-align: center;
   color: #412c75;
   margin-top: 25px;
-}
+} /* I had to separate all the text under different identifiers because some text needed to be styled differently to make the positioning balanced throughout the page. */
 
 /* Container to hold both sections */
 .container {
@@ -55,11 +57,10 @@ h4 {
   background-color: #9b87da;
   padding: 30px;
   text-align: center;
-  color: #4a4a4a;
   width: 400px;
   height: 600px;
-  border: 3px solid #412c75;
-  margin-right: 8px;
+  border: 3px solid #412c75; /* I chose to make a border around the outfit selector box using the same dark purple colour to make it stand out in contrast from the light purple background. I also did the same to the avatar display box on the right to maintain consistency. */
+  margin-right: 8px; /* i made little adjustments to fix the positioning, it was a bit challenging to figure out how to line things up perfectly along the background white grid. */
 }
 
 /* Box Grid for the outfits */
@@ -68,9 +69,9 @@ h4 {
   grid-template-columns: repeat(
     2,
     120px
-  ); /* This creates a 3 row by 2 column grid */
+  ); /* This creates a 3 row by 2 column grid, i chose to make a 3x2 grid rather than a 2x3 grid, because the length aesthetically lines up better with the displayed character on the right.*/
   gap: 40px;
-  margin-bottom: 40px; /* Adjust height of confirm btn */
+  margin-bottom: 40px; /* To adjust height of the confirm button */
   justify-content: center;
 }
 
@@ -78,15 +79,16 @@ h4 {
 .outfit-box {
   width: 120px;
   height: 120px;
-  background-color: #ffdbe7;
-  overflow: hidden; /* Prevents image overflowing outside of box */
-  border: #412c75 3px solid;
-  transition: border 0.3s; /* This creates a smooth transition for the border on hover */
+  background-color: #ffdbe7; /* I used light pink as the outfit box background colour because it complements the purple pastel colour palette.*/
+  border: #412c75 3px solid; /* Staying consistent again with the borders and colour. */
+  transition: border 0.3s; /* This creates a smooth transition for the border when the user hovers on the box. */
 }
 
 .outfit-box:hover {
-  border: 3px solid #ffffff; /* Outline on hover */
-  transform: scale(1.1);
+  border: 3px solid #ffffff; /* Changes border colour to white on hover */
+  transform: scale(
+    1.1
+  ); /* I chose to scale up the outfit box option and changed the border colour to white on hover so thats it's 100% clear to the user that it's clickable.*/
   transition: transform 0.3s ease;
 }
 
@@ -94,30 +96,22 @@ h4 {
 .confirm-btn {
   font-family: "Share Tech Mono";
   background-color: #412c75;
-  color: white;
+  color: white; /* White text contrasts better against a dark purple background. */
   border: 3px solid black;
   padding: 10px 15px;
-  border-radius: 5px; /* To make the button's corners slightly rounded */
+  border-radius: 5px; /* To make the button's corners slightly rounded for aesthetic purposes. */
   cursor: pointer;
   transition: border 0.3s;
 }
 
+/* For the confirm button i did the same hover effect as the outfit boxes */
 .confirm-btn:hover {
   border: 3px solid white;
   transform: scale(1.1);
   transition: transform 0.3s ease;
 }
 
-/* Avatar Display container*/
-.avatar-display {
-  width: 400px;
-  height: 600px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Displayed avatar frame background*/
+/* Background frame for avatar display*/
 .avatar-frame {
   width: 400px;
   height: 600px;
@@ -131,8 +125,9 @@ h4 {
   border: 3px solid #412c75; /* I added a border again to be consistent with my design, as i also made a border for the outfit selector section. */
 }
 
+/* Styling the avatar img itself*/
 .avatar-frame img {
-  margin-left: 60px;
+  margin-left: 60px; /* Again i used margin-left to center the img of the displayed avatar because it's easier to use when i can't make it centered with other ways.*/
   max-width: 63%;
   max-height: auto; /* Maintain aspect ratio */
 }

@@ -3,10 +3,11 @@ function changeAvatar(outfitImage) {
 }
 
 function confirmSelection() {
-  // Redirect to the confirmation page
-  window.location.href = "endgame.html"; // Change this to your target page
+  // Redirect to the end game page
+  window.location.href = "endgame.html";
 }
 
 function playAgain() {
-  window.location.href = "index.html"; // Redirect to index.html
+  // Redirect back to the main game page
+  window.location.href = "index.html";
 }

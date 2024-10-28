@@ -18,8 +18,9 @@
     <div class="container">
       <!-- Outfit Selection Section -->
       <section class="outfit-selector">
-        <h3>Select an outfit for Aishi:</h3>
+        <h3>Select an outfit for Aishi:</h3>  <!-- Instructional sub-header for the user -->
         <div class="outfit-grid">
+        <!--At first, i inserted the full avatar png as the img src, but i realised that the img doesn't look good zoomed out in the outfit option box, so i cropped all the png full figure avatar at the torso and selected that as the cover img instead.-->
           <div class="outfit-box" onclick="changeAvatar('aishi(black).png')">
             <img src="aishi(crop-black).png" alt="Black School Uniform" />
           </div>
@@ -41,15 +42,14 @@
         </div>
         <button class="confirm-btn" onclick="confirmSelection()">
           Confirm ✓
-        </button>
+        </button> <!-- Button for confirming the outfit selection and redirecting user to the end game page. -->
       </section>
 
       <!-- Avatar Display Section -->
       <!-- Image of avatar will be displayed here on selection -->
-      <section class="avatar-display">
-        <div class="avatar-frame">
-          <h4>Aishi:</h4>
-          <img id="avatar" />
+      <section class="avatar-frame">
+          <h4>Aishi:</h4> <!-- Label for the displayed avatar -->
+          <img id="avatar" /> <!-- Placeholder for the selected avatar image -->
         </div>
       </section>
     </div>
