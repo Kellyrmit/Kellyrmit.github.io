@@ -24,6 +24,24 @@ h2 {
   margin-top: 10px;
 }
 
+h3 {
+  font-family: "Share Tech Mono";
+  font-size: large;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h4 {
+  font-family: "Share Tech Mono";
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+  color: #412c75;
+  margin-top: 25px;
+}
+
 /* Container to hold both sections */
 .container {
   display: flex;
@@ -44,15 +62,6 @@ h2 {
   margin-right: 8px;
 }
 
-h3 {
-  font-family: "Share Tech Mono";
-  font-size: large;
-  font-weight: bold;
-  color: #ffffff;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
 /* Box Grid for the outfits */
 .outfit-grid {
   display: grid;
@@ -70,19 +79,23 @@ h3 {
   width: 120px;
   height: 120px;
   background-color: #ffdbe7;
-  overflow: hidden;
+  overflow: hidden; /* Prevents image overflowing outside of box */
+  border: #412c75 3px solid;
   transition: border 0.3s; /* This creates a smooth transition for the border on hover */
 }
 
 .outfit-box:hover {
-  border: 3px solid #412c75; /* Outline on hover */
+  border: 3px solid #ffffff; /* Outline on hover */
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
 
 /* Confirm Button */
 .confirm-btn {
+  font-family: "Share Tech Mono";
   background-color: #412c75;
   color: white;
-  border: none;
+  border: 3px solid black;
   padding: 10px 15px;
   border-radius: 5px; /* To make the button's corners slightly rounded */
   cursor: pointer;
@@ -91,6 +104,8 @@ h3 {
 
 .confirm-btn:hover {
   border: 3px solid white;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
 
 /* Avatar Display container*/
@@ -117,6 +132,7 @@ h3 {
 }
 
 .avatar-frame img {
-  width: 100%; /* Fill the width of the avatar frame */
-  height: auto; /* Maintain aspect ratio */
+  margin-left: 60px;
+  max-width: 63%;
+  max-height: auto; /* Maintain aspect ratio */
 }
