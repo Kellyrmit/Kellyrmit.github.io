@@ -1,0 +1,55 @@
+/* Same purple pastel grid background used in the main page for consistency */
+body {
+  background-color: #d6b7ff; /* Pastel purple background color */
+  background-image: linear-gradient(0deg, white 2px, transparent 1px),
+    linear-gradient(90deg, white 1px, transparent 2px);
+  background-size: 40px 40px;
+  height: auto;
+  display: flex; /* Use flexbox for centering */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  height: 100vh; /* Full viewport height */
+}
+
+.center-box {
+  width: 640px; /* Width of the box */
+  height: 360px; /* Height of the box */
+  background-color: #412c75; /* Same dark purple background color */
+  outline: 2px solid white; /* Create an inner border effect */
+  outline-offset: -15px; /* Move the outline inwards */
+  display: flex; /* Use flexbox for centering box */
+  flex-direction: column; /* Center text vertically */
+  padding: 14ch; /* Adds even spacing all around and centers text*/
+}
+
+.center-box p {
+  font-family: "Share Tech Mono";
+  color: white; /* Text color */
+  font-size: 30px; /* Text size */
+  text-align: center; /* Center text */
+  margin: 0;
+}
+
+/* Button styling */
+.center-box button {
+  font-family: "Share Tech Mono";
+  font-size: 20px; /* Text size */
+  text-align: center; /* Center text */
+  text-decoration-line: underline;
+  color: #ffffff; /* Button text color */
+  background-color: #412c75; /* Button background color */
+  border: white 2px solid; /* No border */
+  padding: 10px 0; /* Padding inside the button */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  width: 200px;
+  margin: 40px 0 0 10ch; /* Margin: top, right, bottom, left */
+}
+
+/* Button hover effect */
+.center-box button:hover {
+  background-color: #ffffff; /* Change background on hover */
+  color: #412c75;
+  transform: scale(1.1);
+}
