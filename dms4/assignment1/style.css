@@ -8,3 +8,7 @@
   --col03: rgb(163, 132, 229);
   --border: single 1rem var(--col02);
 }
+
+body {
+  font-family: "Lexend", "Lexend Regular";
+}
