@@ -10,5 +10,13 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #b0d9ff;
   font-family: "Lexend", "Lexend Regular";
+}
+
+p {
+  text-indent: 50px;
 }
