@@ -1,11 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Grey+Qo&display=swap");
-
 * {
   box-sizing: border-box;
   margin: 0;
 }
 :root {
-  --col01: black;
+  --col01: rgb(128, 130, 236);
   --col02: white;
   --col03: rgb(163, 132, 229);
   --border: single 1rem var(--col02);
