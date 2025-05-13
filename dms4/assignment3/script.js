@@ -3,4 +3,9 @@ const questions = [
   "What a weird-sounding name... Nice to meet you, I'm **** *** ********. ",
 ];
 
-function nextQuestion() {}
+let currentQuestion = 0;
+
+function nextQuestion() {
+  currentQuestion++;
+  document.getElementById("promptBox").value = questions[currentQuestion];
+}
