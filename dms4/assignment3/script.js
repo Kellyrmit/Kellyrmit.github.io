@@ -6,6 +6,9 @@ const questions = [
 let currentQuestion = 0;
 
 function nextQuestion() {
+  const userAnswer = document.getElementById("typingBox").value;
+  console.log("User answered:", userAnswer);
   currentQuestion++;
+
   document.getElementById("promptBox").value = questions[currentQuestion];
 }
