@@ -14,8 +14,12 @@
   </head>
 
   <body>
-    <div class="typingArea">
+    <div class="box">
+      <textarea id="promptBox" readonly>What is your name?</textarea>
+    </div>
+    <div class="box">
       <textarea
+        id="typingArea"
         onkeypress="playSound(event)"
         placeholder="Type your response here."
       ></textarea>
