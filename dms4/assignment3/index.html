@@ -17,12 +17,18 @@
     <div class="box">
       <textarea id="promptBox" readonly>What is your name?</textarea>
     </div>
+
     <div class="box">
       <textarea
         id="typingArea"
         onkeypress="playSound(event)"
         placeholder="Type your response here."
       ></textarea>
+    </div>
+
+    <div class="btn-group">
+      <button ="onclick" ="nextQuestion()">Confirm</button>
+      <button ="onclick" ="clearAnswer()">Delete</button>
     </div>
   </body>
 </html>
