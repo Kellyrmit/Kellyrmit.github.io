@@ -12,3 +12,7 @@ function nextQuestion() {
 
   document.getElementById("promptBox").value = questions[currentQuestion];
 }
+
+function clearAnswer() {
+  document.getElementById("typingBox").value = "";
+}
