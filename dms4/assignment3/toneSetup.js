@@ -1,4 +1,4 @@
-const synth = new Tone.Synth().toDestination();
+const synth = new Tone.MonoSynth().toDestination();
 const typingBox = document.getElementById("TypingBox");
 
 const letterMap = {
@@ -13,6 +13,6 @@ async function playSound(event) {
   await Tone.start();
 
   if (letterMap[key]) {
-    synth.triggerAttackRelease(letterMap[key], "8n");
+    synth.triggerAttackRelease(letterMap[key], "15n");
   }
 }
