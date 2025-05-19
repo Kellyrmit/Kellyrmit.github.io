@@ -12,19 +12,38 @@ body {
   height: 200px;
   padding: 10px;
   font-size: 15px;
-  border: 2px solid #000000;
+  color: #ffffff;
+  background: rgb(0, 0, 0, 0.5);
+  border: 2px solid #e6b6ff;
   border-radius: 8px;
   resize: none;
 }
 
+#typingBox:focus {
+  border: 2px solid #e6b6ff;
+  outline: none;
+}
+
+#typingBox::placeholder {
+  color: #e5b6ff8e;
+}
+
 #promptBox {
-  width: 50%;
-  height: 80px;
+  width: 65%;
+  height: 60px;
   padding: 10px;
   font-size: 15px;
-  border: 2px solid #000000;
+  color: #e6b6ff;
+  background: rgb(0, 0, 0, 0.5);
+  border: 2px solid #e6b6ff;
   border-radius: 8px;
   resize: none;
+  cursor: default;
+}
+
+#promptBox:focus {
+  border: 2px solid rgb(255, 255, 255);
+  outline: none;
 }
 
 .character {
