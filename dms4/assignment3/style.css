@@ -14,13 +14,13 @@ body {
   font-size: 15px;
   color: #ffffff;
   background: rgb(0, 0, 0, 0.5);
-  border: 2px solid #e6b6ff;
+  border: 3px solid #e6b6ff;
   border-radius: 8px;
   resize: none;
 }
 
 #typingBox:focus {
-  border: 2px solid #e6b6ff;
+  border: 3px solid #e6b6ff;
   outline: none;
 }
 
@@ -35,14 +35,14 @@ body {
   font-size: 15px;
   color: #e6b6ff;
   background: rgb(0, 0, 0, 0.5);
-  border: 2px solid #e6b6ff;
+  border: 3px solid #e6b6ff;
   border-radius: 8px;
   resize: none;
   cursor: default;
 }
 
 #promptBox:focus {
-  border: 2px solid rgb(255, 255, 255);
+  border: 3px solid #e6b6ff;
   outline: none;
 }
 
@@ -52,11 +52,24 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   height: 500px;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(-50%, -54%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
 }
 
 .box-top {
   position: absolute;
-  top: 15px;
+  top: 30px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -86,9 +99,23 @@ button {
   border-radius: 8px;
   border: 2px solid #e6b6ff;
   cursor: pointer;
+  transition: transform 0.5s ease;
 }
 
 button:hover {
   color: #000000;
   background-color: #ffffff;
+  animation: pulse 0.5s ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
