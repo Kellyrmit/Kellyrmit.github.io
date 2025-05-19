@@ -1,9 +1,9 @@
 body {
-  background-image: url(image_assets/Screenshot\ 2025-05-18\ at\ 9.32.46\ pm.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
   margin: 0;
+  height: 100vh;
+  background-image: url(image_assets/Screenshot\ 2025-05-19\ at\ 5.22.06\ pm.png);
+  background-size: cover;
+  background-position: center;
 }
 
 #typingBox {
