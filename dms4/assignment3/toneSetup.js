@@ -1,3 +1,12 @@
+document.body.addEventListener(
+  "click",
+  async () => {
+    await Tone.start();
+    console.log("Tone.js started");
+  },
+  { once: true }
+);
+
 const distortion = new Tone.Distortion(0.6).toDestination();
 
 const synth = new Tone.Synth({
@@ -52,6 +61,6 @@ async function playSound(event) {
   await Tone.start();
 
   if (letterMap[key]) {
-    synth.triggerAttackRelease(letterMap[key], "15n");
+    synth.triggerAttackRelease(letterMap[key], "20n");
   }
 }
