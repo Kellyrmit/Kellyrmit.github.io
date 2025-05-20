@@ -1,3 +1,12 @@
+const dialog = document.getElementById("popupDialog");
+const continueBtn = document.getElementById("continueBtn");
+
+continueBtn.addEventListener("click", () => {
+  dialog.close();
+});
+
+dialog.showModal();
+
 const questions = [
   "Who are you?",
   "What a weird-sounding name... Nice to meet you, I'm **** *** ********. ",

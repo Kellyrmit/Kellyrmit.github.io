@@ -1,12 +1,27 @@
-#popupOverlay {
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: url(image_assets/space\ bg.png); /*   The character and background is drawn by me. 
+  Moon object: William.Thompsonj (2020) Pixel Moon, OpenGameArt.org, https://opengameart.org/content/pixel-moon, accessed 20 May 2025. */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+dialog#popupDialog {
   position: fixed;
+  left: 34ch;
+  top: 50ch;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.899);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: transparent;
   z-index: 9999;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.899);
 }
 
 #popupWindow {
@@ -38,16 +53,8 @@
   color: #ffffff;
 }
 
-body {
-  margin: 0;
-  height: 100vh;
-  background-image: url(image_assets/space\ bg.png); /*   The character and background is drawn by me. 
-  Moon object: William.Thompsonj (2020) Pixel Moon, OpenGameArt.org, https://opengameart.org/content/pixel-moon, accessed 20 May 2025. */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow-x: hidden;
-  overflow-y: hidden;
+#popupWindow button:focus {
+  outline: none;
 }
 
 #typingBox {
