@@ -1,7 +1,7 @@
 body {
   margin: 0;
   height: 100vh;
-  background-image: url(image_assets/Screenshot\ 2025-05-20\ at\ 12.44.52\ am.png);
+  background-image: url(image_assets/space\ bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -50,7 +50,7 @@ body {
 
 .character {
   position: absolute;
-  top: 45%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   height: 500px;
