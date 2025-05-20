@@ -1,6 +1,6 @@
 const questions = [
   "Who are you?",
-  "What a weird-sounding name... Nice to meet you, I'm **** *** ********. ",
+  "What is your name?",
   "Question 2",
   "Question 3",
 ];
@@ -8,7 +8,7 @@ const questions = [
 let currentQuestion = 0;
 
 function nextQuestion() {
-  const userAnswer = document.getElementById("typingBox").innerText;
+  const userAnswer = document.getElementById("typingBox").value;
   console.log("User answered:", userAnswer);
   currentQuestion++;
 
@@ -21,5 +21,5 @@ function nextQuestion() {
 }
 
 function clearAnswer() {
-  document.getElementById("typingBox").innerText = "";
+  document.getElementById("typingBox").value = "";
 }

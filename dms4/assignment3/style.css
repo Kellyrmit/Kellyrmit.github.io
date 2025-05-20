@@ -14,6 +14,7 @@ body {
   width: 50%;
   height: 200px;
   padding: 20px;
+  line-height: 2em;
   font-size: 15px;
   font-family: "Press Start 2P";
   color: #ffffff;
@@ -36,8 +37,9 @@ body {
   width: 65%;
   height: 60px;
   padding: 20px;
-  font-size: 20px;
+  font-size: 15px;
   font-family: "Press Start 2P";
+  line-height: 25px;
   color: #e6b6ff;
   background: rgb(0, 0, 0, 0.5);
   border: 3px solid #e6b6ff;
@@ -45,7 +47,7 @@ body {
   resize: none;
   cursor: default;
   overflow: hidden;
-  white-space: nowrap;
+  white-space: normal;
   animation: typing 2s steps(22);
 }
 
