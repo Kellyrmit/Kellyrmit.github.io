@@ -8,18 +8,18 @@ const questions = [
 let currentQuestion = 0;
 
 function nextQuestion() {
-  const userAnswer = document.getElementById("typingBox").value;
+  const userAnswer = document.getElementById("typingBox").innerText;
   console.log("User answered:", userAnswer);
   currentQuestion++;
 
   if (currentQuestion >= questions.length) {
-    document.getElementById("promptBox").value = "";
+    document.getElementById("promptBox").innerText = "";
     return;
   }
 
-  document.getElementById("promptBox").value = questions[currentQuestion];
+  document.getElementById("promptBox").innerText = questions[currentQuestion];
 }
 
 function clearAnswer() {
-  document.getElementById("typingBox").value = "";
+  document.getElementById("typingBox").innerText = "";
 }
