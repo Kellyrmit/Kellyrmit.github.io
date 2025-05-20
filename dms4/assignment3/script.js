@@ -34,3 +34,18 @@ function nextQuestion() {
 function clearAnswer() {
   document.getElementById("typingBox").value = "";
 }
+
+function changeVolume(change) {
+  let current = volumeBtn.volume.value;
+  let newVolume = current + change;
+
+  if (newVolume > 0) {
+    newVolume = 0;
+  }
+  if (newVolume < -60) {
+    newVolume = -60;
+  }
+  volumeBtn.volume.value = newVolume;
+
+  console.log("Volume is now:", newVolume);
+}

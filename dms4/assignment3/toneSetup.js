@@ -7,7 +7,8 @@ document.body.addEventListener(
   { once: true }
 );
 
-const distortion = new Tone.Distortion(0.6).toDestination();
+const volumeBtn = new Tone.Volume(0).toDestination();
+const distortion = new Tone.Distortion(0.6).connect(volumeBtn);
 
 const synth = new Tone.Synth({
   oscillator: {
