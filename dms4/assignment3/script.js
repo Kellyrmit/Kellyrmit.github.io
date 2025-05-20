@@ -1,12 +1,3 @@
-window.addEventListener("DOMContentLoaded", () => {
-  const dialog = document.getElementById("popupDialog");
-  dialog.showModal();
-
-  document.getElementById("continueBtn").addEventListener("click", () => {
-    dialog.close();
-  });
-});
-
 const questions = [
   "Who are you?",
   "What a weird-sounding name... Nice to meet you, I'm **** *** ********. ",
