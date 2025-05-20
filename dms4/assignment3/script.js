@@ -20,7 +20,7 @@ function nextQuestion() {
   currentQuestion++;
 
   if (currentQuestion >= questions.length) {
-    document.getElementById("promptBox").innerText = "";
+    promptBox.innerText = "";
     return;
   }
 
@@ -28,7 +28,7 @@ function nextQuestion() {
   void promptBox.offsetWidth;
   promptBox.classList.add("typing");
 
-  promptBox.value = questions[currentQuestion];
+  promptBox.innerText = questions[currentQuestion];
 }
 
 function clearAnswer() {
