@@ -8,11 +8,19 @@ const letterMap = {
   d: "f3",
 };
 
-async function playSound(event) {
-  const key = event.key.toLowerCase();
-  await Tone.start();
+function startToneContext() {
+  Tone.start().then(() => {
+    console.log("Tone.js started");
+  });
+  // Remove this listener after first call
+  typingBox.removeEventListener("focus", startToneContext);
+}
 
+typingBox.addEventListener("focus", startToneContext);
+
+typingBox.addEventListener("keydown", (event) => {
+  const key = event.key.toLowerCase();
   if (letterMap[key]) {
     synth.triggerAttackRelease(letterMap[key], "15n");
   }
-}
+});
