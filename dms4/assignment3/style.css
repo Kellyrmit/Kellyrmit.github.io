@@ -1,7 +1,8 @@
 body {
   margin: 0;
   height: 100vh;
-  background-image: url(image_assets/space\ bg.png);
+  background-image: url(image_assets/space\ bg.png); /*   The character and background is drawn by me. 
+  Moon object: William.Thompsonj (2020) Pixel Moon, OpenGameArt.org, https://opengameart.org/content/pixel-moon, accessed 20 May 2025. */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
