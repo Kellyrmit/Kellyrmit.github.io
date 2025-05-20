@@ -1,11 +1,11 @@
-const dialog = document.getElementById("popupDialog");
-const continueBtn = document.getElementById("continueBtn");
+window.addEventListener("DOMContentLoaded", () => {
+  const dialog = document.getElementById("popupDialog");
+  dialog.showModal();
 
-continueBtn.addEventListener("click", () => {
-  dialog.close();
+  document.getElementById("continueBtn").addEventListener("click", () => {
+    dialog.close();
+  });
 });
-
-dialog.showModal();
 
 const questions = [
   "Who are you?",
