@@ -54,7 +54,7 @@ body {
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 500px;
+  height: 600px;
   animation: float 4s ease-in-out infinite;
 }
 
