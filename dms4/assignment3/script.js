@@ -24,7 +24,11 @@ function nextQuestion() {
     return;
   }
 
-  document.getElementById("promptBox").innerText = questions[currentQuestion];
+  promptBox.classList.remove("typing");
+  void promptBox.offsetWidth;
+  promptBox.classList.add("typing");
+
+  promptBox.value = questions[currentQuestion];
 }
 
 function clearAnswer() {
