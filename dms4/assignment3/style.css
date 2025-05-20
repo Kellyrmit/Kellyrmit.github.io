@@ -51,7 +51,7 @@ body {
 }
 
 .typing {
-  animation: typing 2s steps(40);
+  animation: typing 2s steps(50);
 }
 
 @keyframes typing {
