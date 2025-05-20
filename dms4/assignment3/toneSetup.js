@@ -1,5 +1,5 @@
 const synth = new Tone.MonoSynth().toDestination();
-const typingBox = document.getElementById("TypingBox");
+const typingBox = document.getElementById("typingBox");
 
 const letterMap = {
   a: "c3",
