@@ -2,18 +2,18 @@ const distortion = new Tone.Distortion(0.6).toDestination();
 
 const synth = new Tone.Synth({
   oscillator: {
-    type: "square",
+    type: "sawtooth",
   },
   filter: {
     Q: 1,
-    type: "lowpass",
+    type: "highpass",
     rolloff: -12,
   },
   envelope: {
     attack: 0.01,
     decay: 0,
     sustain: 0.2,
-    release: 0.2,
+    release: 0.6,
   },
 }).connect(distortion);
 
