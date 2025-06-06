@@ -8,7 +8,7 @@ body {
   padding-left: 10%;
   padding-right: 10%;
   color: #000000;
-  background-image: linear-gradient(rgb(110, 88, 255), rgb(229, 164, 255));
+  background-image: linear-gradient(rgb(123, 66, 255), rgb(200, 161, 255));
 }
 
 hr {
@@ -26,10 +26,21 @@ h1 {
 h3 {
   font-family: "Press Start 2P";
   font-size: 18px;
-  margin-top: 40px;
+  margin-top: 60px;
   margin-bottom: 15px;
 }
 
 p {
-  font-size: 16px;
+  font-size: 18px;
+}
+
+video {
+  margin-top: 30px;
+  width: 500px;
+  height: auto;
+}
+
+.img {
+  margin-top: 30px;
+  width: 500px;
 }
